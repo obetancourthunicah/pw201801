@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo de un Formulario</title>
+  </head>
+  <body>
+    <h1>Ejemplo de Formulario</h1>
+    <hr />
+    <form action="p6_formularios.html" method="post">
+      <label for="txtNombre">Nombre Completo</label>
+      <input type="text" name="txtNombre" id="txtNombre"
+          placeholder="Escriba su nombre aquí"
+          title="Escriba su nombre sin signos especiales"
+       />
+       <br />
+       <label for="txtEmail">Correo Electrónico</label>
+       <input type="email" name="txtEmail" id="txtEmail"
+           placeholder="tucorre@electro.ico"
+        />
+        <br />
+        <label for="txtFchNac">Fecha Nacimiento</label>
+        <input type="date" name="txtFchNac" id="txtFchNac"
+            placeholder="Fecha de Nacimiento"
+         />
+         <br />
+         <label for="txtEdad">Edad</label>
+         <input type="number" name="txtEdad" id="txtEdad" min="0" max="100"
+             placeholder="Edad"
+          />
+          <br />
+          <label for="txtPswd">Contraseña</label>
+          <input type="password" name="txtPswd" id="txtPswd"
+              title="8 character 32 maximo un simbolo y un numero mayuscula"
+              placeholder="Tu Contraseña"
+              maxlength="32"
+           />
+           <fieldset>
+             <input type="radio" value="M" name="rbtGenero" id="rbtGeneroM"/>
+             <label for="rbtGeneroM">Masculino</label> &nbsp;
+             <input type="radio" value="F" name="rbtGenero" id="rbtGeneroF"/>
+             <label for="rbtGeneroF">Femenino</label>
+           </fieldset>
+
+           <fieldset>
+             <input type="checkbox" value="0000FF" name="chkColorBlue" id="chkBlue"/>
+             <label for="chkBlue">Color Azul</label> &nbsp;
+             <input type="checkbox" value="FF0000" name="chkColorRed" id="chkRed"/>
+             <label for="chkRed">Color Rojo</label>&nbsp;
+             <input type="checkbox" value="00FF00" name="chkColorGreen" id="chkGreen"/>
+             <label for="chkGreen">Color Verde</label>
+           </fieldset>
+           <label for="cmbCiudades">Ciudad</label>
+           <select name="cmbCiudades" id="cmbCiudades">
+             <optgroup label="Zona Centro">
+              <option value="TEG">Tegucigalpa</option>
+              <option value="SIG">Siguatepeque</option>
+              <option value="JTC">Juticalpa</option>
+              </optgroup>
+              <optgroup label="Zona Norte">
+              <option value="SPS">San Pedro Sula</option>
+              <option value="LCB" selected>La Ceiba</option>
+              <option value="OLC">Olanchito</option>
+              </optgroup>
+              <optgroup label="Zona Sur Oriente">
+              <option value="DNL">Danlí</option>
+              <option value="CHL">Choluteca</option>
+              </optgroup>
+              <optgroup label="Zona Occidente">
+                <option value="SRC">Santa Rosa de Copán</option>
+              </optgroup>
+           </select>
+           <br />
+           <label for="txtBlog">Texto Largo</label><br />
+           <textarea name="txtLargo" id="txtBlog"></textarea>
+           <hr />
+           <input type="submit" value="Enviar Formulario" name="btnEnviar"
+           id="btnEnviar"/>
+    </form>
+  </body>
+</html>
