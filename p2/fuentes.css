@@ -1,0 +1,33 @@
+body{
+  background-color: rgb(0,0,0);
+  color:#DDD;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+section{
+  line-height: 2;
+  margin: 1em auto;
+  max-width: 920px;
+}
+
+nav ul{
+  list-style: none;
+
+}
+nav ul li{
+  display:inline;
+}
+
+nav ul li a{
+  display:inline-block;
+  color:white;
+  text-decoration: none;
+  /*padding:21px;*/
+  padding:12px 21px; /* TRBL Top Right Bottom Left */
+  /*padding:14px 48px 2px 21px;*/
+  border: solid 1px #AAA;
+ margin:5px;
+  background-color: #444;
+  min-width:160px;
+  text-align: center;
+  border-radius: 22px;
+}
