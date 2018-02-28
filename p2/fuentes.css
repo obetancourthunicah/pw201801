@@ -2,6 +2,11 @@ body{
   background-color: rgb(0,0,0);
   color:#DDD;
   font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 16px;
+  font-size:100%;
+  font-size: 1em;
+  padding: 0px;
+  margin:0px;
 }
 section{
   line-height: 2;
@@ -30,4 +35,17 @@ nav ul li a{
   min-width:160px;
   text-align: center;
   border-radius: 22px;
+}
+
+.heropanel{
+  box-sizing: border-box;
+    margin:0px;
+    padding:4em;
+    width:100vw;
+    height: 100vh;
+    background-color: #555;
+    background-image: url('bkg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#000;
 }
