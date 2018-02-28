@@ -9,13 +9,31 @@ body{
   margin:0px;
 }
 section{
+  position:relative;
   line-height: 2;
   margin: 1em auto;
   max-width: 920px;
 }
 
+nav{
+  box-sizing: border-box;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100vw;
+  text-align: center;
+  margin:0px;
+  padding: 0px;
+  /*right:0px;
+  bottom: 0px;*/
+
+}
+
 nav ul{
+  box-sizing: border-box;
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 
 }
 nav ul li{
@@ -24,21 +42,28 @@ nav ul li{
 
 nav ul li a{
   display:inline-block;
-  color:white;
+
   text-decoration: none;
   /*padding:21px;*/
   padding:12px 21px; /* TRBL Top Right Bottom Left */
   /*padding:14px 48px 2px 21px;*/
-  border: solid 1px #AAA;
- margin:5px;
-  background-color: #444;
+  /*border: solid 1px #AAA;*/
+  margin:5px;
+  color:#333;
   min-width:160px;
   text-align: center;
-  border-radius: 22px;
+  border-radius: 3px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+nav ul li a:hover{
+    background-color: #111;
+    color:white;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .heropanel{
-  box-sizing: border-box;
+  position: relative;
+   box-sizing: border-box;
     margin:0px;
     padding:4em;
     width:100vw;
@@ -48,4 +73,39 @@ nav ul li a{
     background-repeat: no-repeat;
     background-size: cover;
     color:#000;
+}
+
+.heropanel h1{
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 3.5em;
+  font-size:4em;
+  text-align: center;
+  width:100vw;
+  left:0px;
+  margin: 0px;
+  padding: 0px;
+}
+.heropanel h2{
+  position: absolute;
+  bottom: 5em;
+  right: 3em;
+}
+
+.circle{
+  position:absolute;
+  top:-20px;
+  left: -96px;
+  box-sizing: border-box;
+  width:64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px #fff;
+  background-color: #DDD;
+  color:#000;
+  text-align: center;
+  font-size: 2.4em;
+  padding: 0px;
+  line-height: 1.75;
+  font-weight: bold;
 }
