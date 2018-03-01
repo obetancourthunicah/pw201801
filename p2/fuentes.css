@@ -109,3 +109,65 @@ nav ul li a:hover{
   line-height: 1.75;
   font-weight: bold;
 }
+
+#dg .gd label{
+  display: block;
+}
+#dg .gd label span{
+  padding-right: 1em;
+  font-size: 1.25em;
+
+}
+
+#dg{
+  clear:both;
+  overflow:auto;
+}
+
+#dg .gd, #dg .skills{
+  box-sizing: border-box;
+    float:left;
+    width:50%;
+    padding:2em;
+}
+
+#dg .skills ul{
+  list-style: none;
+}
+#dg .skills li span{
+  color:#6376c7;
+}
+#dg .skills li label{
+  display: inline-block;
+  min-width:100px;
+}
+
+
+#dg2{
+  display: flex;
+}
+
+#dg2 .gd2, #dg2 .skills2{
+  box-sizing: border-box;
+    padding:2em;
+}
+#dg2 .gd2{
+  flex:2;
+}
+#dg2 .skills2 ul{
+  list-style: none;
+}
+#dg2 .skills2 li span{
+  color:#6376c7;
+}
+#dg2 .skills2 li label{
+  display: inline-block;
+  min-width:100px;
+}
+#dg2 .gd2 label{
+  display: block;
+}
+#dg2 .gd2 label span{
+  padding-right: 1em;
+  font-size: 1.25em;
+}
