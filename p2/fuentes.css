@@ -149,10 +149,10 @@ nav ul li a:hover{
 
 #dg2 .gd2, #dg2 .skills2{
   box-sizing: border-box;
-    padding:2em;
+  padding:2em;
 }
 #dg2 .gd2{
-  flex:2;
+  min-width: 380px;
 }
 #dg2 .skills2 ul{
   list-style: none;
