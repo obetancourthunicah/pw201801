@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Validación de Formularios</title>
+    <link rel="stylesheet" href="formval.css" />
+    <meta name="viewport" content="width=device-width,scale=1" />
+  </head>
+  <body>
+    <h1>Registro de Cliente</h1>
+    <form action="" method="post" id="form_new_customer">
+      <fieldset>
+        <h2>Datos Generales</h2>
+        <div>
+          <label for="txtNombre">Nombre</label>
+          <input type="text" placeholder="Nombre Completo"
+            name="txtNombre" id="txtNombre" maxlength="60"/>
+        </div>
+        <div>
+          <label for="txtEmail">Correo Electónico</label>
+          <input type="text" placeholder="correo@electr.nico"
+            name="txtEmail" id="txtEmail" maxlength="60"/>
+        </div>
+        <div>
+          <label for="txtTelefono">Teléfono</label>
+          <input type="text" placeholder="(+DDD) DDDD-DDDD"
+            name="txtTelefono" id="txtTelefono" maxlength="10"/>
+        </div>
+        <div>
+          <label for="cmbGenero">Género</label>
+          <select id="cmbGenero" name="cmbGenero">
+            <option value="F">Femenino</option>
+              <option value="M">Masculino</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <button name="btnGuardar" id="btnGuardar">Guardar</button>
+      </fieldset>
+    </form>
+    <script src="formval.js"></script>
+  </body>
+</html>
