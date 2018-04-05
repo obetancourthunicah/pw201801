@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  font-size:16px;
+  font-size: 100%;
+  font-size: 1em;
+}
+
+.card{
+  border:0px;
+  padding:1em;
+  box-shadow: 2px 2px 3px 2px #000;
+  background-image: url('https://images.unsplash.com/photo-1508768787810-6adc1f613514?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=e27f6661df21ed17ab5355b28af8df4e&amp;w=1000&amp;q=80');
+}
+
+fieldset{
+  border-style: solid;
+  border-color: #999;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background-color: rgba(255,255,255,0.7);
+}
+label{
+  display: block;
+  font-weight: bold;
+  margin-top:0.5em;
+}
+input{
+  font-size: 1em;
+  width:100%;
+  border-radius: 3px;
+  border-style: solid;
+  padding:0.25em 0.5em;
+  border-color:rgb(115, 65, 0);
+  outline: none;
+}
+legend{
+  text-shadow: 1px 0px 3px #fff;
+}
+.right{
+  text-align: right;
+}
+button{
+  font-weight: bold;
+  font-size: 1em;
+  padding:0.5em 1em;
+  border: solid 1px rgb(84, 48, 0);
+  background-color: rgb(115, 65, 0);
+  border-radius: 33px;
+  color:white;
+  text-shadow: 1px 1px 2px #000;
+  transition: background-color 0.5s ease;
+}
+button:hover{
+  background-color: rgb(156, 88, 0);
+  cursor: pointer;
+}
+
+.error{
+  color:rgb(119, 14, 0);
+  border-color: rgb(119, 14, 0);
+}

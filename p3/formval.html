@@ -8,13 +8,17 @@
   </head>
   <body>
     <h1>Registro de Cliente</h1>
-    <form action="" method="post" id="form_new_customer">
-      <fieldset>
-        <h2>Datos Generales</h2>
+    <form action="" method="post" id="form_new_customer"
+      class="card" >
+      <fieldset >
+        <legend>
+          <h2>Datos Generales</h2>
+        </legend>
         <div>
           <label for="txtNombre">Nombre</label>
           <input type="text" placeholder="Nombre Completo"
             name="txtNombre" id="txtNombre" maxlength="60"/>
+            <div id="errorMsgNombre" class="error"/>
         </div>
         <div>
           <label for="txtEmail">Correo Electónico</label>
@@ -34,7 +38,7 @@
           </select>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="right">
         <button name="btnGuardar" id="btnGuardar">Guardar</button>
       </fieldset>
     </form>

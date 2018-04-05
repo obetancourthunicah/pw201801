@@ -7,13 +7,17 @@ function btnGuardar_onClick(e){
   if(txtNombre.value){
     //https://regex101.com/
     if((/^\s*$/).test(txtNombre.value)||!(/^[A-Za-z\sñÑáéíóúü']*$/).test(txtNombre.value)){
-      alert("El nombre tiene caracteres no válidos.")
+      //alert("El nombre tiene caracteres no válidos.")
+      document.getElementById('errorMsgNombre').innerHTML += "El nombre tiene caracteres no válidos."
       txtNombre.focus();
+      txtNombre.classList.add("error");
       error= true;
     }
   }else{
-    alert('El Nombre es Requerido');
+    //alert('El Nombre es Requerido');
+    document.getElementById('errorMsgNombre').innerHTML = "El Nombre es Requerido";
     txtNombre.focus();
+    txtNombre.classList.add("error");
     error=true;
   }
 
