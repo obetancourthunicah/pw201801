@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Abel", sans-serif;
+  font-size: 16px;
+  font-size: 100%;
+  font-size: 1em;
+  padding: 0px;
+  margin: 0px;
+}
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+}
+header h1 {
+}
+
+header nav {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+header nav ul {
+  list-style: none;
+  clear: both;
+}
+header nav ul li {
+  float: left;
+  margin-bottom: 1em;
+}
+header nav ul li a {
+  display: inline-block;
+  padding: 0.75em 1.25em;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: border-bottom-color 0.25s;
+}
+header nav ul li a:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+main .slider {
+  width: 100vw;
+  /*height: 90vh;*/
+  overflow: hidden;
+}
+
+.slider .slideroll {
+  clear: both;
+  position: absolute;
+  transition: left 1s ease-in-out;
+}
+
+.slide {
+  position: relative;
+  float: left;
+}
+.slide img {
+  display: block;
+  width: 100vw;
+}
